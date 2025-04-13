@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crime</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    
+    <audio id="background-music" loop>
+      <source src="../medias/Yung Nobre.mp3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+      
+      document.addEventListener('click', function() {
+        var audio = document.getElementById('background-music');
+        audio.play().catch(error => {
+          console.error("Erro ao reproduzir áudio:", error);
+        });
+      });
+    </script>
+  </body>
+</html>
